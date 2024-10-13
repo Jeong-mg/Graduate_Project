@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back"
+    tools:context=".Short_description">
+
+    <LinearLayout
+        android:layout_marginTop="90dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_corner">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="welcome to Mood UP"
+                android:shadowColor="#33000000"
+                android:shadowDx="7.0"
+                android:shadowDy="7.0"
+                android:shadowRadius="7.0"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-80dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/short_description"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Mood UP 에 오신 걸 환영합니다.\n\n기분에 따른 영상콘텐츠를 보고 싶을 때,\n저희 어플을 사용해보세요.\n지금의 기분을 입력하면 당신의 무드에 \n맞는 영화, 드라마를 추천해드립니다.\n기분에 따른 추천을 원하지않다면\n검색을 이용해주세요.\n언제나 당신의 기분이 우선인 Mood UP !
+\n\n\n"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="80dp"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="- 사용자 개인정보를 안전하게 보호합니다.\n
+- 사용자는 언제든지 계정을 해지할 수 있으며, 관련 정보는 삭제됩니다.\n
+- 영화 등급에 따라 연령 제한될 수 있습니다.\n"
+            android:layout_gravity="center"
+            android:textSize="11dp"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작하기"
+            android:shadowColor="#33000000"
+            android:shadowDx="7.0"
+            android:shadowDy="7.0"
+            android:shadowRadius="7.0"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:layout_marginTop="520dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/white" />
+
+    </FrameLayout>
+
+</LinearLayout >

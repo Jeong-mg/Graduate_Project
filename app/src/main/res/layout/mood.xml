@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back"
+    tools:context=".Mood">
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back_icon" />
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="530dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_corner4">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp">
+        <FrameLayout
+            android:layout_width="255dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="현재 기분이 어떤가요 ?"
+                android:shadowColor="#33000000"
+                android:shadowDx="7.0"
+                android:shadowDy="7.0"
+                android:shadowRadius="7.0"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:textColor="@color/gray" />
+
+        </FrameLayout>
+    </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp">
+            <RelativeLayout
+                android:layout_width="255dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_corner2">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </FrameLayout>
+
+
+                    <EditText
+                        android:id="@+id/edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_margin="20dp"
+                        android:hint="느끼고 있는 감정이나 있었던 일을\n자유롭게 작성해주세요\n(예) 지루해, 행복해 등"
+                        android:textSize="10sp"
+                        android:inputType="textMultiLine"/>
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/go_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circular_background"
+            android:layout_marginTop="180dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Go!"
+                    android:shadowColor="#33000000"
+                    android:shadowDx="7.0"
+                    android:shadowDy="7.0"
+                    android:shadowRadius="7.0"
+                    android:textSize="30dp"
+                    android:textColor="@color/white" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout >

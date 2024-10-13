@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".MovieDetail">
+
+   <LinearLayout
+       android:id="@+id/detail_posterImageView"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </LinearLayout>
+
+   <ImageView
+       android:id="@+id/back_button"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/back_icon" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+      <TextView
+          android:id="@+id/detail_titleTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Movie Title"
+          android:textSize="25sp"
+          android:textStyle="bold"
+          android:layout_marginTop="100dp"
+          android:layout_marginStart="16dp"
+          android:layout_marginEnd="16dp"/>
+      <!--wish image-->
+
+   </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+
+      <TextView
+          android:id="@+id/detail_overviewTextView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Movie Overview"
+          android:textSize="16sp"
+          android:layout_marginTop="170dp"
+          android:layout_marginStart="30dp"
+          android:layout_marginEnd="30dp"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:layout_marginTop="15dp"
+          android:layout_height="wrap_content">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="인기도"
+             android:textSize="16sp"
+             android:layout_marginStart="30dp"
+             android:layout_marginEnd="30dp"/>
+         <TextView
+             android:id="@+id/detail_popularityTextView"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Movie Popularity"
+             android:textSize="16sp"
+             android:layout_marginStart="10dp"
+             android:layout_marginEnd="30dp"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:layout_marginTop="15dp"
+          android:layout_height="wrap_content">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="개봉일"
+             android:textSize="16sp"
+             android:layout_marginStart="30dp"
+             android:layout_marginEnd="30dp"/>
+         <TextView
+             android:id="@+id/detail_releasedateTextView"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Movie Release_date"
+             android:textSize="16sp"
+             android:layout_marginStart="10dp"
+             android:layout_marginEnd="30dp"/>
+      </LinearLayout>
+   </LinearLayout>
+
+
+
+
+</FrameLayout >
